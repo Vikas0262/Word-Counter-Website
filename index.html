@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Counter</h1>
+        <textarea id="text-area" placeholder="Enter your text here..."></textarea>
+        <div class="output-container">
+            <div class="output">
+                <p class="words">Words:</p>
+                <span id="word-count">0</span>
+            </div>
+            <div class="output">
+                <p class="characters">Characters:</p>
+                <span id="char-count">0</span>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="copy-btn">Copy Text</button>
+            <button id="uppercase-btn">Convert to Uppercase</button>
+            <button id="lowercase-btn">Convert to Lowercase</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

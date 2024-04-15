@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #fff;
+    font-family: Poppins;
+    background-color: #83cee0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 46rem;
+    background-color: #1d1f21;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 8rem;
+    background-color: #2d2f33;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #a09fa4;
+    resize: both;
+    margin-bottom: 2rem;
+    overflow: auto;
+}
+
+.output-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.words,
+.characters {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #a09fa4;
+    margin-bottom: 0.5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.3rem 1rem;
+    background-color: #a4fbe3;
+    border-radius: 0.5rem;
+    color: #1d1f21;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding-block: 10px;
+}
+
+button:hover {
+    background-color: #83cee0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        min-height: 6rem;
+    }
+
+    .words,
+    .characters {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
